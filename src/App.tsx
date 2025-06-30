@@ -1,7 +1,7 @@
-import { useStore } from './store/useStore';
-import { Button } from './components/Button';
-import { ThemeToggle } from './components/ThemeToggle';
-import './styles/globals.css';
+import { useStore } from '@/store/useStore';
+import { Button } from '@/components/Button';
+import { ThemeToggle } from '@/components/ThemeToggle';
+import '@/styles/globals.css';
 
 function App() {
   const { count, increment, decrement, reset } = useStore();
