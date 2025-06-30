@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @reference "tailwindcss";
 
 :root {
@@ -14,7 +14,9 @@
 body {
   background-color: rgb(var(--background));
   color: rgb(var(--foreground));
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 @layer components {

@@ -1,24 +1,20 @@
-import { useDarkMode } from '../hooks/useDarkMode'
+import { useDarkMode } from '../hooks/useDarkMode';
 
 export function ThemeToggle() {
-  const { isDark, toggle } = useDarkMode()
+  const { isDark, toggle } = useDarkMode();
 
   return (
     <button
       onClick={toggle}
-      className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors"
+      className="rounded-lg bg-gray-200 p-2 transition-colors hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700"
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
-      {isDark ? (
-        <SunIcon className="h-5 w-5" />
-      ) : (
-        <MoonIcon className="h-5 w-5" />
-      )}
+      {isDark ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
     </button>
-  )
+  );
 }
 
-function SunIcon({ className = "" }: { className?: string }) {
+function SunIcon({ className = '' }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -40,10 +36,10 @@ function SunIcon({ className = "" }: { className?: string }) {
       <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
     </svg>
-  )
+  );
 }
 
-function MoonIcon({ className = "" }: { className?: string }) {
+function MoonIcon({ className = '' }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -57,5 +53,5 @@ function MoonIcon({ className = "" }: { className?: string }) {
     >
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
     </svg>
-  )
+  );
 }
