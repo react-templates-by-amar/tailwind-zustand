@@ -2,6 +2,10 @@
 
 A modern, lightweight React starter template with Tailwind CSS for styling and Zustand for state management. This template provides a clean, organized structure to kickstart your React projects with best practices.
 
+## 📚 Documentation
+
+For detailed documentation on available hooks, components, and state management, check out the [Documentation](/docs/README.md).
+
 ## Features
 
 - ⚡️ **Vite** — Lightning fast development and build
@@ -9,8 +13,10 @@ A modern, lightweight React starter template with Tailwind CSS for styling and Z
 - 🎨 **Tailwind CSS** — Utility-first CSS framework
 - 🗃️ **Zustand** — Simple, fast state management
 - 🌓 **Dark Mode** — Built-in dark mode support
-- 📁 **Organized Structure** — Components, hooks, and store folders
+- 📁 **Organized Structure** — Clean project structure with separation of concerns
+- 📚 **Comprehensive Documentation** — Detailed docs for all hooks and components
 - 🧩 **Component Library** — Basic UI components to build upon
+- 🔌 **Custom Hooks** — Collection of reusable React hooks
 
 ## Quick Start
 
