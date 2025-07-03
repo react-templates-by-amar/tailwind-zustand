@@ -1,5 +1,5 @@
 import { cn } from '@/utils';
-import type { LoadingSpinnerProps } from '@/types/components';
+import type { LoadingSpinnerProps } from '@/types';
 
 export const LoadingSpinner = ({ className, size = 'md', ...props }: LoadingSpinnerProps) => {
   const sizeClasses = {

@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import { clsx } from 'clsx';
-import type { ButtonProps } from '@/types/components';
+import type { ButtonProps } from '@/types';
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', children, ...props }, ref) => {
