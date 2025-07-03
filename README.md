@@ -60,7 +60,9 @@ npm run dev
 ```
 ├── public/              # Static assets
 ├── src/
-│   ├── components/      # Reusable UI components
+│   ├── components/      # Feature-specific components
+│   │   ├── ui/          # Reusable UI components (Button, LoadingSpinner, etc.)
+│   │   └── ...          # Other feature components
 │   ├── hooks/           # Custom React hooks
 │   ├── store/           # Zustand store definitions
 │   ├── styles/          # Global styles and Tailwind config

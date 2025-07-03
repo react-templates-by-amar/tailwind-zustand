@@ -1,8 +1,5 @@
 import { cn } from '@/utils';
-
-interface LoadingSpinnerProps extends React.HTMLAttributes<HTMLDivElement> {
-  size?: 'sm' | 'md' | 'lg';
-}
+import type { LoadingSpinnerProps } from '@/types/components';
 
 export const LoadingSpinner = ({ className, size = 'md', ...props }: LoadingSpinnerProps) => {
   const sizeClasses = {
