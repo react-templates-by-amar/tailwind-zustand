@@ -1,47 +1,40 @@
-import { useStore } from '@/store/useStore';
-import { Button } from '@/components/Button';
+import { Outlet, Link } from 'react-router-dom';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import '@/styles/globals.css';
 
 function App() {
-  const { count, increment, decrement, reset } = useStore();
-
   return (
     <div className="bg-background text-foreground min-h-screen transition-colors duration-300">
-      <div className="container mx-auto px-4 py-16">
-        <div className="mb-8 flex items-center justify-between">
-          <h1 className="text-3xl font-bold">React + Tailwind + Zustand</h1>
-          <ThemeToggle />
-        </div>
-        <div className="bg-background border-foreground/10 mx-auto mt-8 max-w-md rounded-lg border p-6 shadow-lg">
-          <div className="mb-6 text-center">
-            <p className="text-foreground mb-4 text-2xl">Count: {count}</p>
-            <div className="flex justify-center gap-4">
-              <Button onClick={decrement} variant="secondary">
-                Decrement
-              </Button>
-              <Button onClick={increment} variant="secondary">
-                Increment
-              </Button>
+      <header className="border-b border-foreground/10">
+        <div className="container mx-auto px-4">
+          <nav className="flex h-16 items-center justify-between">
+            <div className="flex items-center gap-8">
+              <Link to="/" className="text-xl font-bold">
+                React Template
+              </Link>
+              <div className="hidden md:flex gap-6">
+                <Link to="/" className="text-foreground/80 hover:text-foreground transition-colors">
+                  Home
+                </Link>
+                <Link to="/about" className="text-foreground/80 hover:text-foreground transition-colors">
+                  About
+                </Link>
+              </div>
             </div>
-            <div className="mt-4">
-              <Button onClick={reset} variant="outline" size="sm">
-                Reset
-              </Button>
-            </div>
-          </div>
-          <div className="border-foreground/10 mt-8 border-t pt-6">
-            <h2 className="text-foreground mb-2 text-xl font-semibold">Template Features</h2>
-            <ul className="text-foreground/80 list-disc space-y-1 pl-5 text-sm">
-              <li>React with TypeScript</li>
-              <li>Tailwind CSS for styling</li>
-              <li>Zustand for state management</li>
-              <li>Dark mode support</li>
-              <li>Component structure</li>
-            </ul>
-          </div>
+            <ThemeToggle />
+          </nav>
         </div>
-      </div>
+      </header>
+
+      <main className="container mx-auto px-4 py-8">
+        <Outlet />
+      </main>
+
+      <footer className="border-t border-foreground/10 py-6">
+        <div className="container mx-auto px-4 text-center text-foreground/60 text-sm">
+          © {new Date().getFullYear()} React Template. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
 }
