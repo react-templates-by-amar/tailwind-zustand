@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import type { UseMutationOptions, UseQueryOptions } from '@tanstack/react-query';
-import http from '../utils/http';
+import { http } from '../utils';
 
 type HttpMethod = 'get' | 'post' | 'put' | 'delete' | 'patch';
 
