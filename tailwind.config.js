@@ -8,6 +8,10 @@ export default {
       colors: {
         background: 'rgb(var(--background) / <alpha-value>)',
         foreground: 'rgb(var(--foreground) / <alpha-value>)',
+        'text-primary': 'rgb(var(--text-primary) / <alpha-value>)',
+        'text-secondary': 'rgb(var(--text-secondary) / <alpha-value>)',
+        'text-muted': 'rgb(var(--text-muted) / <alpha-value>)',
+        'text-accent': 'rgb(var(--text-accent) / <alpha-value>)',
         primary: {
           50: '#f0f9ff',
           100: '#e0f2fe',
