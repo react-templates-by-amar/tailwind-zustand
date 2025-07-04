@@ -1,12 +1,9 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import { Modal } from '@components/ui';
+import { useToggle } from '@/hooks';
 
 const Home = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const [isModalOpen, setIsModalOpen] = useToggle(false);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -27,14 +24,19 @@ const Home = () => {
         </Link>
 
         <button
-          onClick={openModal}
+          onClick={() => setIsModalOpen(true)}
           className="inline-block rounded bg-purple-500 px-4 py-2 text-white transition-colors hover:bg-purple-600"
         >
           Open Test Modal
         </button>
       </div>
 
-      <Modal isOpen={isModalOpen} onClose={closeModal} title="Test Modal" size="md">
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Test Modal"
+        size="md"
+      >
         <div className="py-4">
           <p className="mb-4">
             This is a test modal to demonstrate the Modal component functionality.
@@ -43,7 +45,7 @@ const Home = () => {
           <div className="mt-6 border-t border-gray-200 pt-4 dark:border-gray-700">
             <div className="flex justify-end">
               <button
-                onClick={closeModal}
+                onClick={() => setIsModalOpen(false)}
                 className="rounded bg-blue-500 px-4 py-2 text-white transition-colors hover:bg-blue-600"
               >
                 Close Modal
