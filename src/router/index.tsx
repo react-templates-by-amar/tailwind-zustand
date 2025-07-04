@@ -1,7 +1,7 @@
 import { createBrowserRouter, createRoutesFromElements, Route, Navigate } from 'react-router-dom';
 import App from '../App';
 import { lazy, Suspense } from 'react';
-import { LoadingSpinner } from '@/components/ui/LoadingSpinner';
+import { LoadingSpinner } from '@components/ui';
 
 // Lazy load pages for better performance
 const HomePage = lazy(() => import('../pages/Home.tsx'));
