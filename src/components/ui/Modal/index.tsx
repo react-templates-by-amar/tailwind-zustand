@@ -11,14 +11,7 @@ export interface ModalProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
 }
 
-export const Modal = ({
-  isOpen,
-  onClose,
-  title,
-  children,
-  className,
-  size = 'md',
-}: ModalProps) => {
+export const Modal = ({ isOpen, onClose, title, children, className, size = 'md' }: ModalProps) => {
   if (!isOpen) return null;
 
   const sizeClasses = {
@@ -30,30 +23,22 @@ export const Modal = ({
 
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      <div 
-        className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity" 
+      <div
+        className="fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity"
         onClick={onClose}
         aria-hidden="true"
       />
-      <div 
+      <div
         className={cn(
-          'relative z-10 w-full rounded-lg bg-white p-6 shadow-xl transition-all duration-300 dark:bg-gray-800',
+          'relative z-10 w-full rounded-lg bg-blue-400 p-6 shadow-xl transition-all duration-300 dark:bg-blue-400 dark:text-gray-100',
           sizeClasses[size],
           className
         )}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
-          {title && (
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
-              {title}
-            </h2>
-          )}
-          <button
-            onClick={onClose}
-            className="ml-4 rounded-full p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200"
-            aria-label="Close modal"
-          >
+          {title && <h2 className="text-xl font-semibold">{title}</h2>}
+          <button onClick={onClose} className="ml-4 rounded-full p-1" aria-label="Close modal">
             <X className="h-5 w-5" />
           </button>
         </div>
