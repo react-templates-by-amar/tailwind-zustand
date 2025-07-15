@@ -15,6 +15,7 @@ For detailed documentation on available hooks, components, and state management,
 - 🌓 **Dark Mode** — Built-in dark mode support
 - 🌐 **API Client** — Axios setup with interceptors and typed service pattern
 - ⚙️ **Environment Config** — Type-safe access to environment variables
+- 🔧 **Error Boundary** — Global error handling for graceful failures
 - 📁 **Organized Structure** — Clean project structure with separation of concerns
 - 📚 **Comprehensive Documentation** — Detailed docs for all hooks and components
 - 🧩 **Component Library** — Basic UI components to build upon

@@ -10,6 +10,7 @@ Welcome to the project documentation! This directory contains comprehensive docu
 - [HTTP Interceptors](/docs/http-interceptors.md) - HTTP client setup with Axios interceptors
 - [API Services](/docs/api-services.md) - API services pattern for making API calls
 - [Environment Configuration](/docs/environment-config.md) - Type-safe environment variables
+- [Error Boundary](/docs/error-boundary.md) - Global error handling
 
 ## Component Organization
 
