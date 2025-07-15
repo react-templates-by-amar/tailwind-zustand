@@ -13,6 +13,7 @@ For detailed documentation on available hooks, components, and state management,
 - 🎨 **Tailwind CSS** — Utility-first CSS framework
 - 🗃️ **Zustand** — Simple, fast state management
 - 🌓 **Dark Mode** — Built-in dark mode support
+- 🌐 **API Client** — Axios setup with interceptors and typed service pattern
 - 📁 **Organized Structure** — Clean project structure with separation of concerns
 - 📚 **Comprehensive Documentation** — Detailed docs for all hooks and components
 - 🧩 **Component Library** — Basic UI components to build upon
@@ -60,12 +61,15 @@ npm run dev
 ```
 ├── public/              # Static assets
 ├── src/
+│   ├── api/             # API services for making API calls
 │   ├── components/      # Feature-specific components
 │   │   ├── ui/          # Reusable UI components (Button, LoadingSpinner, etc.)
 │   │   └── ...          # Other feature components
 │   ├── hooks/           # Custom React hooks
 │   ├── store/           # Zustand store definitions
 │   ├── styles/          # Global styles and Tailwind config
+│   ├── types/           # TypeScript type definitions
+│   ├── utils/           # Utility functions including HTTP client
 │   ├── App.tsx          # Main application component
 │   └── main.tsx         # Application entry point
 ├── index.html           # HTML template

@@ -7,6 +7,8 @@ Welcome to the project documentation! This directory contains comprehensive docu
 - [Hooks](/docs/hooks/README.md) - Custom React hooks and their usage
 - [Store](/docs/store/README.md) - State management documentation
 - [Components](/docs/components/README.md) - Component library and usage
+- [HTTP Interceptors](/docs/http-interceptors.md) - HTTP client setup with Axios interceptors
+- [API Services](/docs/api-services.md) - API services pattern for making API calls
 
 ## Component Organization
 
