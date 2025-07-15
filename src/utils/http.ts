@@ -1,9 +1,10 @@
 import axios from 'axios';
 import type { AxiosError, AxiosInstance, AxiosResponse } from 'axios';
+import { config } from './config';
 
 // Create axios instance with default config
 const http: AxiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
+  baseURL: config.apiBaseUrl,
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',

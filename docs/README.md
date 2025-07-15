@@ -9,6 +9,7 @@ Welcome to the project documentation! This directory contains comprehensive docu
 - [Components](/docs/components/README.md) - Component library and usage
 - [HTTP Interceptors](/docs/http-interceptors.md) - HTTP client setup with Axios interceptors
 - [API Services](/docs/api-services.md) - API services pattern for making API calls
+- [Environment Configuration](/docs/environment-config.md) - Type-safe environment variables
 
 ## Component Organization
 

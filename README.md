@@ -14,6 +14,7 @@ For detailed documentation on available hooks, components, and state management,
 - 🗃️ **Zustand** — Simple, fast state management
 - 🌓 **Dark Mode** — Built-in dark mode support
 - 🌐 **API Client** — Axios setup with interceptors and typed service pattern
+- ⚙️ **Environment Config** — Type-safe access to environment variables
 - 📁 **Organized Structure** — Clean project structure with separation of concerns
 - 📚 **Comprehensive Documentation** — Detailed docs for all hooks and components
 - 🧩 **Component Library** — Basic UI components to build upon
