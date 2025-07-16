@@ -27,7 +27,7 @@ For detailed documentation on available hooks, components, and state management,
 
 ```bash
 # Clone the template
-npx degit react-templates/tailwind-zustand my-app
+npx degit react-templates-by-amar/tailwind-zustand
 
 # Navigate to the project
 cd my-app
@@ -43,7 +43,7 @@ npm run dev
 
 ```bash
 # Clone the repository
-git clone https://github.com/react-templates/tailwind-zustand.git my-app
+git clone https://github.com/react-templates-by-amar/tailwind-zustand.git
 
 # Navigate to the project
 cd my-app
