@@ -29,9 +29,6 @@ For detailed documentation on available hooks, components, and state management,
 # Clone the template
 npx degit react-templates-by-amar/tailwind-zustand
 
-# Navigate to the project
-cd my-app
-
 # Install dependencies
 npm install
 
@@ -45,8 +42,6 @@ npm run dev
 # Clone the repository
 git clone https://github.com/react-templates-by-amar/tailwind-zustand.git
 
-# Navigate to the project
-cd my-app
 
 # Remove git history
 rm -rf .git
